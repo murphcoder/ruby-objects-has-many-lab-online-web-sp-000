@@ -1,6 +1,6 @@
 class Song
   
-  attr_accessor :name
+  attr_accessor :name, :artist
   
   @@all = []
   
@@ -8,7 +8,5 @@ class Song
     @name = name
     @@all << self
   end
-  
-  
   
 end
