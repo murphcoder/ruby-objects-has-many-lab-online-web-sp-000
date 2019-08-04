@@ -10,6 +10,7 @@ class Author
     Post.all.select {|words| words.author == self}
   end
   
-  
+  def add_post(post)
+    
   
 end
