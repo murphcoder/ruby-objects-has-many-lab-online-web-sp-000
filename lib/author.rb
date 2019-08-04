@@ -20,7 +20,7 @@ class Author
   end
   
   def self.post_count
-    Post.all.count 
+    Post.all.count {|words| words.author != nil}
   end
   
 end
