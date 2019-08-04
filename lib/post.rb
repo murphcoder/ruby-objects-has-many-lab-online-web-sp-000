@@ -10,6 +10,12 @@ class Post
     @@all << self
   end
   
-  
+  def author_name
+    if @author == nil
+      nil
+    else
+      @author.name
+    end
+  end
   
 end
