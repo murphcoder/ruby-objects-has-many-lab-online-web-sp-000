@@ -4,6 +4,12 @@ class Post
   
   @@all = []
   
+  def initialize(name)
+    @name = name
+    @author = nil
+    @@all << self
+  end
+  
   
   
 end
